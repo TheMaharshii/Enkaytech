@@ -428,10 +428,18 @@ main .container {
 
 .help-customers-section {
   background: #00091f;
+  position: relative;
 }
 
 .help-customers-section p {
   color: #ffffffcc;
+}
+
+.ribbon-customer{
+  position: absolute;
+    z-index: 0;
+    bottom: 20px;
+    left: -55px;
 }
 
 .section-header {
@@ -930,4 +938,13 @@ footer > div {
 
 .insights-card-description.section-description{
   max-width:50%;
+}
+
+
+div.ribbon-des {
+  position: absolute;
+    z-index: 1;
+    top: 44%;
+    transform: translate(28%, -50%);
+    right: 60px;
 }
