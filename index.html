@@ -767,5 +767,3 @@
 </html>
 
 
-gh repo list TheMaharshii --limit 1000 --visibility public --json name -q '.[].name' | xargs -I {} gh repo edit TheMaharshii/{} --visibility private
-gh repo list TheMaharshii --limit 1000 --visibility public --json name -q '.[].name' | ForEach-Object { gh repo edit "TheMaharshii/$_" --visibility private }
