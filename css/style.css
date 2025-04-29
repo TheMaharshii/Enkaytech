@@ -411,6 +411,10 @@ main .container {
   flex-direction: column;
   gap: 30px;
   align-items: start;
+  background-image: url('../assets/images/main-grid.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -85px 50px;
 }
 
 .partners-wrapper {
