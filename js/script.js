@@ -130,3 +130,18 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   }).mount();
 });
+
+
+const hamburger = document.querySelector(".hamburger__button");
+const nav = document.querySelector(".nav__list");
+const closeButton = document.querySelector(".nav__link--close");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.add("active");
+});
+
+closeButton.addEventListener("click", () => {
+  nav.classList.remove("active");
+});
+
+

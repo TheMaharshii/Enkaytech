@@ -1030,7 +1030,7 @@ section.insights-card-section {
   background-image: url("../assets/insight-hub-background.svg");
 }
 
-section.marketplace-section{
+section.marketplace-section {
   background-image: url("../assets/marketplace-grid.svg");
 }
 
@@ -1052,7 +1052,14 @@ section.marketplace-section{
     max-width: 100%;
   }
   .header {
-    display: none;
+    /* display: none; */
+  }
+
+  .nav__link.nav__link--close{
+    position: absolute;
+    top: 11px;
+    right: 50px;
+    font-size: 24px;
   }
 
   .logos-slide img {
@@ -1109,12 +1116,40 @@ section.marketplace-section{
     align-items: center;
   }
 
-  .ribbon-bg{
+  .ribbon-bg {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vw;
+    background: #00091f;
+    z-index: 10;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: right 0.3s ease;
+  }
+
+  .nav__list.active{
+    right: 0;
+  }
+
+  .container.header__wrapper {
+    position: static;
+  }
+
+  .nav__button{
     display: none;
   }
 }
 
-wistia-player{
+wistia-player {
   min-width: 100%;
 
   min-height: 100%;
