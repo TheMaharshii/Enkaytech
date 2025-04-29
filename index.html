@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enkaytech - Starbucks Case Study</title>
+
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header - Full width with container inside -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <div class="header__logo">
+          <img src="./assets/images/main-logo.svg" alt="Enkaytech Logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our Apps</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Industries</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Insights</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
+          </ul>
+        </nav>
+        <button class="nav__button button-gradient">Contact Us</button>
+      </div>
+    </header>
+
+    <!-- Slider Section - Full width -->
+    <section class="slider-section hero-section">
+      <div class="slider splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- Slide 1 -->
+            <li class="splide__slide slider__slide">
+              <img
+                class="slide__background"
+                src="./assets/images/landing-page-slider-img.svg"
+                alt="Starbucks cafe background"
+              />
+              <div class="container slide__content-wrapper">
+                <div class="slide__content">
+                  <div class="slide__brand">
+                    <img
+                      src="./assets/images/starbucks.svg"
+                      alt="Starbucks Logo"
+                      class="brand__logo"
+                    />
+                    <span class="brand__name">Starbucks california</span>
+                  </div>
+                  <h1 class="slide__title">
+                    <span>Inspiring</span>
+                    <span>& nurturing the </span>
+                    <span>human spirit</span>
+                  </h1>
+                  <p class="slide__description">
+                    Starbucks' mission is to be the world's top coffee provider
+                    while inspiring and nurturing the human spirit...
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="splide__slide slider__slide">
+              <img
+                class="slide__background"
+                src="./assets/images/landing-page-slider-img.svg"
+                alt="Coffee brewing background"
+              />
+              <div class="container slide__content-wrapper">
+                <div class="slide__content">
+                  <div class="slide__brand">
+                    <img
+                      src="./assets/images/starbucks.svg"
+                      alt="Starbucks Logo"
+                      class="brand__logo"
+                    />
+                    <span class="brand__name">Starbucks california</span>
+                  </div>
+                  <h1 class="slide__title">
+                    <span>Crafting</span>
+                    <span>the perfect experience</span>
+                  </h1>
+                  <p class="slide__description">
+                    Every cup of coffee represents our commitment to quality and
+                    dedication to customer satisfaction...
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 3 -->
+            <li class="splide__slide slider__slide">
+              <img
+                class="slide__background"
+                src="./assets/images/landing-page-slider-img.svg"
+                alt="Coffee shop community background"
+              />
+              <div class="container slide__content-wrapper">
+                <div class="slide__content">
+                  <div class="slide__brand">
+                    <img
+                      src="./assets/images/starbucks.svg"
+                      alt="Starbucks Logo"
+                      class="brand__logo"
+                    />
+                    <span class="brand__name">Starbucks california</span>
+                  </div>
+                  <h1 class="slide__title">
+                    <span>Building</span>
+                    <span>community connections</span>
+                  </h1>
+                  <p class="slide__description">
+                    Our stores are gathering places where ideas are shared and
+                    relationships are nurtured...
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Custom slider navigation -->
+        <div class="container">
+          <div class="slider__nav">
+            <div class="nav__arrows">
+              <button class="nav__arrow nav__arrow--prev">
+                <svg
+                  width="26"
+                  height="14"
+                  viewBox="0 0 26 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.16923 10.1657C1.23404 10.1657 1.29985 10.1585 1.36579 10.1434L8.74429 8.45015C9.21529 8.34208 9.50954 7.87258 9.40148 7.40158C9.29342 6.93065 8.82417 6.63658 8.35292 6.74446L0.974415 8.43771C0.503415 8.54577 0.209166 9.01527 0.317228 9.48627C0.410103 9.8914 0.77054 10.1657 1.16923 10.1657Z"
+                  />
+                  <path
+                    d="M1.17119 10.1656C1.57038 10.1656 1.93088 9.89083 2.02351 9.48515L3.71226 2.08608C3.81976 1.61496 3.52501 1.14583 3.05388 1.03827C2.58269 0.930645 2.11357 1.22552 2.00607 1.69665L0.31732 9.09571C0.20982 9.56684 0.50457 10.036 0.975694 10.1435C1.04119 10.1585 1.10676 10.1656 1.17119 10.1656Z"
+                  />
+                  <path
+                    d="M24.8291 13.4744C25.3124 13.4744 25.7041 13.0826 25.7041 12.5994C25.7041 5.94188 20.3017 0.525635 13.6612 0.525635C10.4615 0.525635 7.44798 1.77201 5.17567 4.0352L0.766041 8.45732C0.424852 8.79957 0.425667 9.35357 0.767792 9.69482C1.1101 10.0359 1.66404 10.0351 2.00529 9.69307L6.41279 5.27301C8.3526 3.34088 10.9276 2.27564 13.6612 2.27564C19.3367 2.27564 23.9541 6.90689 23.9541 12.5994C23.9541 13.0826 24.3459 13.4744 24.8291 13.4744Z"
+                  />
+                </svg>
+              </button>
+              <div class="nav__dots">
+                <span class="dot dot--active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="nav__arrow nav__arrow--next">
+                <svg
+                  width="26"
+                  height="14"
+                  viewBox="0 0 26 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.8308 10.1657C24.766 10.1657 24.7001 10.1585 24.6342 10.1434L17.2557 8.45015C16.7847 8.34208 16.4905 7.87258 16.5985 7.40158C16.7066 6.93065 17.1758 6.63658 17.6471 6.74446L25.0256 8.43771C25.4966 8.54577 25.7908 9.01527 25.6828 9.48627C25.5899 9.8914 25.2295 10.1657 24.8308 10.1657Z"
+                  />
+                  <path
+                    d="M24.8288 10.1656C24.4296 10.1656 24.0691 9.89083 23.9765 9.48515L22.2877 2.08608C22.1802 1.61496 22.475 1.14583 22.9461 1.03827C23.4173 0.930645 23.8864 1.22552 23.9939 1.69665L25.6827 9.09571C25.7902 9.56684 25.4954 10.036 25.0243 10.1435C24.9588 10.1585 24.8932 10.1656 24.8288 10.1656Z"
+                  />
+                  <path
+                    d="M1.1709 13.4744C0.687648 13.4744 0.295898 13.0826 0.295898 12.5994C0.295898 5.94188 5.69827 0.525635 12.3388 0.525635C15.5385 0.525635 18.552 1.77201 20.8243 4.0352L25.234 8.45732C25.5751 8.79957 25.5743 9.35357 25.2322 9.69482C24.8899 10.0359 24.336 10.0351 23.9947 9.69307L19.5872 5.27301C17.6474 3.34088 15.0724 2.27564 12.3388 2.27564C6.66327 2.27564 2.0459 6.90689 2.0459 12.5994C2.0459 13.0826 1.65415 13.4744 1.1709 13.4744Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos-slider">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./assets/images/logo-slider/slider-logo (1).svg" />
+          <img src="./assets/images/logo-slider/slider-logo (2).svg" />
+          <img src="./assets/images/logo-slider/slider-logo (3).svg" />
+          <img src="./assets/images/logo-slider/slider-logo (4).svg" />
+          <img src="./assets/images/logo-slider/slider-logo (5).svg" />
+          <img src="./assets/images/logo-slider/slider-logo (6).svg" />
+          <!-- <img src="./assets/images/logo-slider/slider-logo (7).svg" />
+            <img src="./assets/images/logo-slider/slider-logo (8).svg" /> -->
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="vision-section">
+        <div class="container vision-wrapper">
+          <div class="vision-video">
+            <img src="./assets/images/Video-placeholder.svg" alt="" />
+          </div>
+          <div class="vision-content">
+            <h2 class="vision-title">
+              Discover the vision behind
+              <span class="highlight">Enkay tech</span>
+            </h2>
+            <p>
+              Optimize, secure, and scale your cloud infrastructure with expert
+              Azure solutions. From migration to modernization. Optimize,
+              secure, and scale your cloud infrastructure with expert Azure
+              solutions.
+            </p>
+            <a href="#" class="button-gradient button-primary">Know More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <div class="container partners-wrapper">
+          <div class="partners-content">
+            <h2 class="partners-title heading heading-with-margin">
+              Who are we Partnered with?
+            </h2>
+            <p>
+              Optimize, secure, and scale your cloud infrastructure with expert
+              Azure solutions. From migration to modernization. Optimize,
+              secure, and scale your cloud infrastructure with expert Azure
+              solutions.
+            </p>
+          </div>
+          <div class="partners-image">
+            <img src="./assets/images/partenered-with-image.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="help-customers-section">
+        <div class="container help-customers-wrapper">
+          <div class="help-customers-header section-header">
+            <h2 class="help-customers-title section-title">
+              How we help Our <span class="highlight">Customers</span>
+            </h2>
+            <p class="help-customers-description section-description">
+              Optimize, secure, and scale your cloud infrastructure with expert
+              Azure solutions. From migration.
+            </p>
+          </div>
+          <div class="help-customers-content">
+            <div class="help-customers-image">
+              <img
+                src="./assets/images/how-we-help-customer-video-placeholder.svg"
+                alt="How we help our customers"
+              />
+            </div>
+            <div class="help-customers-details">
+              <div class="top slider-gradient"></div>
+              <div class="help-customers-list">
+                <div class="help-customers-item">
+                  <h3>EDI for Logistics</h3>
+                  <p>
+                    Enkaytech provides integration services for connecting line
+                    of business systems (e.g. CRM, ERP, MRP etc.) or legacy
+                    systems (IBM, SAP, Oracle etc.) with popular SaaS tools such
+                    as Salesforce, Twilio, <a href="#">Read more</a>
+                  </p>
+                </div>
+                <div class="help-customers-item">
+                  <h3>EDI for Logistics</h3>
+                  <p>
+                    Enkaytech provides integration services for connecting line
+                    of business systems (e.g. CRM, ERP, MRP etc.) or legacy
+                    systems (IBM, SAP, Oracle etc.) with popular SaaS tools such
+                    as Salesforce, Twilio, <a href="#">Read more</a>
+                  </p>
+                </div>
+                <div class="help-customers-item">
+                  <h3>EDI for Logistics</h3>
+                  <p>
+                    Enkaytech's EDI solutions for CargoWise One and other B2B
+                    transactions seamlessly integrate with customers, suppliers,
+                    trading partners. <a href="#">Read more</a>
+                  </p>
+                </div>
+                <div class="help-customers-item">
+                  <h3>Modernizing Applications</h3>
+                  <p>
+                    Enkaytech delivers application modernization services to
+                    help businesses leverage the benefits of cloud,
+                    <a href="#">Read more</a>
+                  </p>
+                </div>
+                <div class="help-customers-item">
+                  <h3>Modernizing Applications</h3>
+                  <p>
+                    Enkaytech delivers application modernization services to
+                    help businesses leverage the benefits of cloud,
+                    <a href="#">Read more</a>
+                  </p>
+                </div>
+                <div class="help-customers-item placeholder-items">
+                  <h3>EDI for Logistics</h3>
+                  <p>
+                    Enkaytech's EDI solutions for CargoWise One and other B2B
+                    transactions seamlessly integrate with customers, suppliers,
+                    trading partners. <a href="#">Read more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="bottom slider-gradient"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marketplace-section">
+        <div class="container marketplace-wrapper">
+          <div class="marketplace-header section-header">
+            <h2 class="marketplace-title heading heading-42">
+              Our Marketplace
+            </h2>
+            <p class="marketplace-description section-description">
+              Optimize, secure, and scale your cloud infrastructure with expert
+              Azure solutions.
+            </p>
+          </div>
+          <div class="marketplace-cards">
+            <div class="marketplace-card card-one">
+              <h3 class="card-title heading-with-margin heading-42 heading">
+                Discover the vision behind
+                <span class="highlight">certwatch</span>
+              </h3>
+              <p class="card-description">
+                Optimize, secure, and scale your cloud infrastructure with
+                expert Azure solutions. Optimize, secure, and scale your cloud
+                infrastructure with expert Azure solutions.
+              </p>
+              <a href="#" class="button-primary view-more-btn">View More</a>
+              <div class="card-vector">
+                <img src="./assets/images/Main-vector.svg" alt="" />
+              </div>
+            </div>
+            <div class="marketplace-card card-two">
+              <h3 class="card-title heading-with-margin heading-42 heading">
+                Discover the vision behind
+                <span class="highlight">enkaypro</span>
+              </h3>
+              <p class="card-description">
+                Optimize, secure, and scale your cloud infrastructure with
+                expert Azure solutions. Optimize, secure, and scale your cloud
+                infrastructure with expert Azure solutions.
+              </p>
+              <a href="#" class="button-primary view-more-btn">View More</a>
+              <div class="card-vector">
+                <img src="./assets/images/card-vector.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="marketplace-third-card-container">
+            <div class="marketplace-third-card card-three">
+              <div class="section-header">
+                <h3 class="card-title heading-with-margin heading-42 heading">
+                  Discover the vision behind
+                  <span class="highlight">trackswork</span>
+                </h3>
+                <p class="section-description">
+                  Optimize, secure, and scale your cloud infrastructure with
+                  expert Azure solutions. Optimize, secure, and scale your cloud
+                  infrastructure with expert Azure solutions Optimize, secure,
+                  and scale your cloud infrastructure with expert Azure
+                  solutions.
+                </p>
+
+                <a href="#" class="view-more-btn button-primary">View More</a>
+              </div>
+              <div class="third-card-vector card-vector">
+                <img src="./assets/images/third-card-vector.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="testimonial-header section-header">
+            <h2
+              class="testimonial-title heading heading-with-margin heading-42"
+            >
+              Our Success Stories
+            </h2>
+            <p class="testimonial-description section-description">
+              Optimize, secure, and scale your cloud infrastructure with expert
+              Azure solutions.
+            </p>
+          </div>
+
+          <div class="testimonial-wrapper">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                <h3 class="title">Richard Cooper</h3>
+                <span class="post">CEO, Razorpay</span>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus, non consequat odio ipsum nec est. Sed
+                  mattis egestas elementum. Nulla facilisi. Quisque placerat
+                  risus ac nunc ornare tincidunt. Sed quis faucibus nunc.
+                  Pellentesque accumsan arcu mi, eget venenatis mauris.
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <h3 class="title">Richard Cooper</h3>
+                <span class="post">Web CEO, Razorpay</span>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus, non consequat odio ipsum nec est. Sed
+                  mattis egestas elementum. Nulla facilisi. Quisque placerat
+                  risus ac nunc ornare tincidunt. Sed quis faucibus nunc.
+                  Pellentesque accumsan arcu mi, eget venenatis mauris.
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <h3 class="title">Richard Cooper</h3>
+                <span class="post">CEO, Razorpay</span>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus, non consequat odio ipsum nec est. Sed
+                  mattis egestas elementum. Nulla facilisi. Quisque placerat
+                  risus ac nunc ornare tincidunt. Sed quis faucibus nunc.
+                  Pellentesque accumsan arcu mi, eget venenatis mauris.
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <h3 class="title">Richard Cooper</h3>
+                <span class="post">CEO, Razorpay</span>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus, non consequat odio ipsum nec est. Sed
+                  mattis egestas elementum. Nulla facilisi. Quisque placerat
+                  risus ac nunc ornare tincidunt. Sed quis faucibus nunc.
+                  Pellentesque accumsan arcu mi, eget venenatis mauris.
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <h3 class="title">Richard Cooper</h3>
+                <span class="post">CEO, Razorpay</span>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus molestie, justo nec convallis sollicitudin, sapien
+                  lorem dictum lacus, non consequat odio ipsum nec est. Sed
+                  mattis egestas elementum. Nulla facilisi. Quisque placerat
+                  risus ac nunc ornare tincidunt. Sed quis faucibus nunc.
+                  Pellentesque accumsan arcu mi, eget venenatis mauris.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us-section">
+        <div class="container about-us-wrapper">
+          <div class="about-us-content">
+            <h2 class="about-us-title heading heading-with-margin">
+              We are tech innovators and Tier-1 managed service providers for
+              businesses <span class="highlight"> across the globe. </span>
+            </h2>
+            <ul class="about-us-list">
+              <li>
+                <span class="list-icon">
+                  <img src="/assets/images/about-us-list-icon.svg" alt="" />
+                </span>
+                <span
+                  >Microsoft Solutions Partner for Digital & App Innovation,
+                  Data, and AI.</span
+                >
+              </li>
+              <li>
+                <span class="list-icon">
+                  <img src="/assets/images/about-us-list-icon.svg" alt="" />
+                </span>
+                <span
+                  >WiseTech CargoWise One Platinum Integration Partner.</span
+                >
+              </li>
+              <li>
+                <span class="list-icon">
+                  <img src="/assets/images/about-us-list-icon.svg" alt="" />
+                </span>
+                <span>Salesforce & Mulesoft Partner.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-us-image">
+            <img
+              src="./assets/images/about-us-image.svg"
+              alt="About Enkaytech"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="insights-card-section">
+        <div class="container insights-card-wrapper">
+          <div class="insights-card-header section-header">
+            <h2 class="insights-card-title heading heading-with-margin">
+              The Insight Hub
+            </h2>
+            <p class="insights-card-description section-description">
+              Explore the latest industry insights, innovations, and ideas with
+              us. Stay informed, inspired, and engaged with every article.
+            </p>
+          </div>
+          <div class="insight-hub splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide slider__slide">
+                  <div class="insights-card-container">
+                    <div class="insight-card-image">
+                      <img
+                        src="./assets/images/insight-card-image.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="insight-card-content">
+                      <div class="insight-content-item tags">
+                        <span class="tag"><a href="">Azure</a></span>
+                        <span class="tag"><a href="">Microsoft</a></span>
+                      </div>
+                      <div class="insight-content-item">
+                        <h2>Azure Integration</h2>
+                        <p>
+                          Most of these suggestions are ideal for when you’re
+                          dealing with design systems or huge design files, but
+                          they’re also...
+                        </p>
+                      </div>
+                      <div class="insight-content-item"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide slider__slide">
+                  <div class="insights-card-container">
+                    <div class="insight-card-image">
+                      <img
+                        src="./assets/images/insight-card-image.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="insight-card-content">
+                      <div class="insight-content-item tags">
+                        <span class="tag"><a href="">Azure</a></span>
+                        <span class="tag"><a href="">Microsoft</a></span>
+                      </div>
+                      <div class="insight-content-item">
+                        <h2>Azure Integration</h2>
+                        <p>
+                          Most of these suggestions are ideal for when you’re
+                          dealing with design systems or huge design files, but
+                          they’re also...
+                        </p>
+                      </div>
+                      <div class="insight-content-item"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide slider__slide">
+                  <div class="insights-card-container">
+                    <div class="insight-card-image">
+                      <img
+                        src="./assets/images/insight-card-image.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="insight-card-content">
+                      <div class="insight-content-item tags">
+                        <span class="tag"><a href="">Azure</a></span>
+                        <span class="tag"><a href="">Microsoft</a></span>
+                      </div>
+                      <div class="insight-content-item">
+                        <h2>Azure Integration</h2>
+                        <p>
+                          Most of these suggestions are ideal for when you’re
+                          dealing with design systems or huge design files, but
+                          they’re also...
+                        </p>
+                      </div>
+                      <div class="insight-content-item"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us-section">
+        <div class="container contact-us-wrapper">
+          <form class="contact-us-form" action="" method="post">
+            <div class="input-container">
+              <label for="input" class="text">Name:</label>
+              <input
+                type="text"
+                placeholder="Write here..."
+                name="input"
+                class="input"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="input" class="text">Email:</label>
+              <input
+                type="email"
+                placeholder="Write here..."
+                name="input"
+                class="input"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="input" class="text">Phone:</label>
+              <input
+                type="tel"
+                placeholder="Write here..."
+                name="input"
+                class="input"
+              />
+            </div>
+
+            <div class="input-container full-width-input">
+              <label for="input" class="text">Message:</label>
+              <textarea
+                placeholder="Write here..."
+                name="input"
+                class="input"
+              ></textarea>
+            </div>
+
+            <div
+              class="input-container full-width-input submit-button-container"
+            >
+              <button type="submit">Let's Connect</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-list-items">
+        <div class="container footer__wrapper">
+          <div class="footer__logo">
+            <img src="./assets/images/colored-logo.svg" alt="Enkaytech Logo" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Help</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms of Service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="company-details">
+        <div class="container">
+          <div class="footer__details">
+            <p>© 2025 enkaytech. All rights reserved.</p>
+            <div class="footer__contact">
+              <a href="mailto:info@enkaytech.com" class="footer__icon">
+                <i class="fas fa-envelope"></i> info@enkaytech.com
+              </a>
+              <a href="tel:6308579969" class="footer__icon">
+                <i class="fas fa-phone"></i> 630-857-9969
+              </a>
+              <a href="https://github.com" target="_blank" class="footer__icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="footer__icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#testimonial-slider").owlCarousel({
+          items: 1,
+          itemsDesktop: [1000, 1],
+          itemsDesktopSmall: [979, 1],
+          itemsTablet: [768, 1],
+          pagination: true,
+          navigation: true,
+          navigationText: ["", ""],
+          slideSpeed: 1000,
+          autoPlay: false
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+gh repo list TheMaharshii --limit 1000 --visibility public --json name -q '.[].name' | xargs -I {} gh repo edit TheMaharshii/{} --visibility private
+gh repo list TheMaharshii --limit 1000 --visibility public --json name -q '.[].name' | ForEach-Object { gh repo edit "TheMaharshii/$_" --visibility private }
