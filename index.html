@@ -58,7 +58,7 @@
 
     <!-- Slider Section - Full width -->
     <section class="slider-section hero-section">
-      <div class="ribbon-des">
+      <div class="ribbon-bg ribbon-des">
         <img src="./assets/images/ribbon-hero-section.svg" alt="" />
       </div>
       <div class="slider splide">
@@ -226,8 +226,28 @@
       <section class="vision-section">
         <div class="container vision-wrapper">
           <div class="vision-video">
-            <img src="./assets/images/Video-placeholder.svg" alt="" />
+            <script src="https://fast.wistia.com/player.js" async></script>
+            <script
+              src="https://fast.wistia.com/embed/0ufidxok5r.js"
+              async
+              type="module"
+            ></script>
+            <style>
+              wistia-player[media-id="0ufidxok5r"]:not(:defined) {
+                background: center / contain no-repeat
+                  url("https://fast.wistia.com/embed/medias/0ufidxok5r/swatch");
+                display: block;
+                filter: blur(5px);
+                padding-top: 56.25%;
+              }
+            </style>
+            <wistia-player
+              media-id="0ufidxok5r"
+              aspect="1.7777777777777777"
+            ></wistia-player>
           </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+
           <div class="vision-content">
             <h2 class="vision-title">
               Discover the vision behind
@@ -264,7 +284,7 @@
       </section>
 
       <section class="help-customers-section">
-        <div class="ribbon-customer">
+        <div class="ribbon-bg ribbon-customer">
           <img src="./assets/images/ribbon-customer.svg" alt="" />
         </div>
         <div class="container help-customers-wrapper">
@@ -285,7 +305,7 @@
               />
             </div>
             <div class="help-customers-details">
-              <!-- <div class="top slider-gradient"></div> -->
+              <div class="top slider-gradient"></div>
               <div
                 class="splide help-customers-list"
                 role="group"
@@ -348,7 +368,7 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="bottom slider-gradient"></div> -->
+              <div class="bottom slider-gradient"></div>
             </div>
           </div>
         </div>
@@ -519,24 +539,24 @@
                 <span class="list-icon">
                   <img src="./assets/images/about-us-list-icon.svg" alt="" />
                 </span>
-                <span
+                <a href="#"
                   >Microsoft Solutions Partner for Digital & App Innovation,
-                  Data, and AI.</span
+                  Data, and AI.</a
                 >
               </li>
               <li>
                 <span class="list-icon">
                   <img src="./assets/images/about-us-list-icon.svg" alt="" />
                 </span>
-                <span
-                  >WiseTech CargoWise One Platinum Integration Partner.</span
+                <a href="#"
+                  >WiseTech CargoWise One Platinum Integration Partner.</a
                 >
               </li>
               <li>
                 <span class="list-icon">
                   <img src="./assets/images/about-us-list-icon.svg" alt="" />
                 </span>
-                <span>Salesforce & Mulesoft Partner.</span>
+                <a href="#">Salesforce & Mulesoft Partner.</a>
               </li>
             </ul>
           </div>
@@ -550,6 +570,7 @@
       </section>
 
       <section class="insights-card-section">
+        <div class="background"></div>
         <div class="container insights-card-wrapper">
           <div class="insights-card-header section-header">
             <h2 class="insights-card-title heading heading-with-margin">
@@ -664,9 +685,18 @@
 
       <section class="contact-us-section">
         <div class="container contact-us-wrapper">
+          <div class="contact-us-header section-header">
+            <h2 class="contact-us-title heading heading-with-margin heading-42">
+              Get in touch with us
+            </h2>
+            <p class="contact-us-description section-description">
+              We’re here to assist you.
+            </p>
+          </div>
+
           <form class="contact-us-form" action="" method="post">
             <div class="input-container">
-              <label for="input" class="text">Name:</label>
+              <label for="input" class="text">First Name:</label>
               <input
                 type="text"
                 placeholder="Write here..."
@@ -676,7 +706,7 @@
             </div>
 
             <div class="input-container">
-              <label for="input" class="text">Email:</label>
+              <label for="input" class="text">Email Address:</label>
               <input
                 type="email"
                 placeholder="Write here..."
@@ -686,7 +716,7 @@
             </div>
 
             <div class="input-container">
-              <label for="input" class="text">Phone:</label>
+              <label for="input" class="text">Phone Number:</label>
               <input
                 type="tel"
                 placeholder="Write here..."

@@ -406,17 +406,6 @@ main .container {
   letter-spacing: 0.03rem;
 }
 
-.vision-content,
-.partners-content {
-  background-image: url("../assets/images/main-grid.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: -85px 50px;
-}
-.partners-content {
-  background-position: 100% -20px;
-}
-
 .vision-content {
   display: flex;
   flex-direction: column;
@@ -1014,8 +1003,44 @@ div.ribbon-des {
   transform: translateX(-50%);
 }
 
+section,
+footer {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-image: url("../assets/footer-grid.svg");
+}
+
+section.vision-section {
+  background-image: url("../assets/discover-the-vision-grid.svg");
+}
+
+section.partners-section {
+  background-image: url("../assets/who-we-partenered-with-grid.svg");
+}
+
+section.about-us-section {
+  background-image: url("../assets/we-are-tech-grid.svg");
+}
+
+section.insights-card-section {
+  background-image: url("../assets/insight-hub-background.svg");
+}
+
+.contact-us-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.contact-us-description {
+  max-width: unset;
+  text-align: left;
+}
+
 @media only screen and (max-width: 780px) {
-  html{
+  html {
     font-size: 14px;
   }
   img {
@@ -1025,7 +1050,7 @@ div.ribbon-des {
     display: none;
   }
 
-  .logos-slide img{
+  .logos-slide img {
     max-width: 120px;
     height: auto;
     margin: 0 20px;
@@ -1074,8 +1099,12 @@ div.ribbon-des {
     text-align: center;
     margin-top: 10px;
   }
-  .footer__contac {
+  .footer__contact {
     margin-top: 15px;
     align-items: center;
+  }
+
+  .ribbon-bg{
+    display: none;
   }
 }
