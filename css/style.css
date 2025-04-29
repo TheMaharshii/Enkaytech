@@ -1120,7 +1120,7 @@ section.marketplace-section {
     display: none;
   }
   .nav__list {
-    display: flex;
+    display: none;
     position: absolute;
     top: 0;
     right: -100%;
@@ -1138,6 +1138,7 @@ section.marketplace-section {
 
   .nav__list.active{
     right: 0;
+    display: flex;
   }
 
   .container.header__wrapper {
