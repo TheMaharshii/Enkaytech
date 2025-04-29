@@ -383,7 +383,7 @@ main .container {
 .vision-wrapper {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 60px;
 }
 
@@ -1112,4 +1112,10 @@ section.marketplace-section{
   .ribbon-bg{
     display: none;
   }
+}
+
+wistia-player{
+  min-width: 100%;
+
+  min-height: 100%;
 }
