@@ -61,6 +61,7 @@ var insideHubSplide = new Splide(".insight-hub.splide", {
     768: {
       perPage: 1,
       gap: "0.5rem",
+      padding: "0rem",
     },
     1024: {
       perPage: 2,
@@ -71,10 +72,10 @@ var insideHubSplide = new Splide(".insight-hub.splide", {
 
 insideHubSplide.mount();
 
-const insightPrevButton = document.querySelector(".nav__arrow--prev.insight-hub-nav-btn");
-const insightNextButton = document.querySelector(".nav__arrow--next.insight-hub-nav-btn");
+const insightPrevButton = document.querySelector(".insight-hub-nav .nav__arrow--prev");
+const insightNextButton = document.querySelector(".insight-hub-nav .nav__arrow--next");
 
-const insightDots = document.querySelectorAll(".insight-hub-nav-btn .dot");
+const insightDots = document.querySelectorAll(".insight-hub-nav .dot");
 console.log(insightDots);
 console.log(insightPrevButton);
 console.log(insightNextButton);
@@ -103,4 +104,29 @@ insightDots.forEach((insdot, index) => {
   insdot.addEventListener("click", () => {
     insideHubSplide.go(index);
   });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.help-customers-list', {
+    direction: 'ttb',
+    type: 'loop',
+    height: '700px',
+    perPage: 1,
+    perMove: 1,
+    gap: '0px',
+    padding: '7rem',
+    pagination: true,
+    arrows: true,
+    autoplay: true,
+    interval: 3000,
+    breakpoints: {
+      768: {
+        perPage: 1,
+        gap: "0.5rem",
+        padding: "0rem",
+        height: '220px',
+      },
+    },
+  }).mount();
 });

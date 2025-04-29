@@ -58,7 +58,9 @@
 
     <!-- Slider Section - Full width -->
     <section class="slider-section hero-section">
-      <div class="ribbon-des"><img src="./assets/images/ribbon-hero-section.svg" alt=""></div>
+      <div class="ribbon-des">
+        <img src="./assets/images/ribbon-hero-section.svg" alt="" />
+      </div>
       <div class="slider splide">
         <div class="splide__track">
           <ul class="splide__list">
@@ -262,7 +264,9 @@
       </section>
 
       <section class="help-customers-section">
-        <div class="ribbon-customer"><img src="./assets/images/ribbon-customer.svg" alt=""></div>
+        <div class="ribbon-customer">
+          <img src="./assets/images/ribbon-customer.svg" alt="" />
+        </div>
         <div class="container help-customers-wrapper">
           <div class="help-customers-header section-header">
             <h2 class="help-customers-title section-title">
@@ -281,60 +285,70 @@
               />
             </div>
             <div class="help-customers-details">
-              <div class="top slider-gradient"></div>
-              <div class="help-customers-list">
-                <div class="help-customers-item">
-                  <h3>EDI for Logistics</h3>
-                  <p>
-                    Enkaytech provides integration services for connecting line
-                    of business systems (e.g. CRM, ERP, MRP etc.) or legacy
-                    systems (IBM, SAP, Oracle etc.) with popular SaaS tools such
-                    as Salesforce, Twilio, <a href="#">Read more</a>
-                  </p>
-                </div>
-                <div class="help-customers-item">
-                  <h3>EDI for Logistics</h3>
-                  <p>
-                    Enkaytech provides integration services for connecting line
-                    of business systems (e.g. CRM, ERP, MRP etc.) or legacy
-                    systems (IBM, SAP, Oracle etc.) with popular SaaS tools such
-                    as Salesforce, Twilio, <a href="#">Read more</a>
-                  </p>
-                </div>
-                <div class="help-customers-item">
-                  <h3>EDI for Logistics</h3>
-                  <p>
-                    Enkaytech's EDI solutions for CargoWise One and other B2B
-                    transactions seamlessly integrate with customers, suppliers,
-                    trading partners. <a href="#">Read more</a>
-                  </p>
-                </div>
-                <div class="help-customers-item">
-                  <h3>Modernizing Applications</h3>
-                  <p>
-                    Enkaytech delivers application modernization services to
-                    help businesses leverage the benefits of cloud,
-                    <a href="#">Read more</a>
-                  </p>
-                </div>
-                <div class="help-customers-item">
-                  <h3>Modernizing Applications</h3>
-                  <p>
-                    Enkaytech delivers application modernization services to
-                    help businesses leverage the benefits of cloud,
-                    <a href="#">Read more</a>
-                  </p>
-                </div>
-                <div class="help-customers-item placeholder-items">
-                  <h3>EDI for Logistics</h3>
-                  <p>
-                    Enkaytech's EDI solutions for CargoWise One and other B2B
-                    transactions seamlessly integrate with customers, suppliers,
-                    trading partners. <a href="#">Read more</a>
-                  </p>
+              <!-- <div class="top slider-gradient"></div> -->
+              <div
+                class="splide help-customers-list"
+                role="group"
+                aria-label="Help Customers Slider"
+              >
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <div class="splide__slide help-customers-item">
+                      <h3>EDI for Logistics</h3>
+                      <p>
+                        Enkaytech provides integration services for connecting
+                        line of business systems (e.g. CRM, ERP, MRP etc.) or
+                        legacy systems (IBM, SAP, Oracle etc.) with popular SaaS
+                        tools such as Salesforce, Twilio,
+                        <a href="#">Read more</a>
+                      </p>
+                    </div>
+                    <div class="splide__slide help-customers-item">
+                      <h3>EDI for Logistics</h3>
+                      <p>
+                        Enkaytech provides integration services for connecting
+                        line of business systems (e.g. CRM, ERP, MRP etc.) or
+                        legacy systems (IBM, SAP, Oracle etc.) with popular SaaS
+                        tools such as Salesforce, Twilio,
+                        <a href="#">Read more</a>
+                      </p>
+                    </div>
+                    <div class="splide__slide help-customers-item">
+                      <h3>EDI for Logistics</h3>
+                      <p>
+                        Enkaytech's EDI solutions for CargoWise One and other
+                        B2B transactions seamlessly integrate with customers,
+                        suppliers, trading partners. <a href="#">Read more</a>
+                      </p>
+                    </div>
+                    <div class="splide__slide help-customers-item">
+                      <h3>Modernizing Applications</h3>
+                      <p>
+                        Enkaytech delivers application modernization services to
+                        help businesses leverage the benefits of cloud,
+                        <a href="#">Read more</a>
+                      </p>
+                    </div>
+                    <div class="splide__slide help-customers-item">
+                      <h3>Modernizing Applications</h3>
+                      <p>
+                        Enkaytech delivers application modernization services to
+                        help businesses leverage the benefits of cloud,
+                        <a href="#">Read more</a>
+                      </p>
+                    </div>
+                    <div class="splide__slide help-customers-item">
+                      <h3>EDI for Logistics</h3>
+                      <p>
+                        Enkaytech's EDI solutions for CargoWise One and other
+                        B2B transactions seamlessly integrate with customers,
+                        suppliers, trading partners. <a href="#">Read more</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="bottom slider-gradient"></div>
+              <!-- <div class="bottom slider-gradient"></div> -->
             </div>
           </div>
         </div>
@@ -626,6 +640,24 @@
                 </li>
               </ul>
             </div>
+
+            <div class="container insight-hub-nav">
+              <div class="slider__nav">
+                <div class="nav__arrows">
+                  <button class="nav__arrow nav__arrow--prev">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </button>
+                  <div class="nav__dots">
+                    <span class="dot dot--active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <button class="nav__arrow nav__arrow--next">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -767,5 +799,3 @@
     </script>
   </body>
 </html>
-
-

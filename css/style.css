@@ -406,14 +406,15 @@ main .container {
   letter-spacing: 0.03rem;
 }
 
-.vision-content,.partners-content{
-  background-image: url('../assets/images/main-grid.svg');
+.vision-content,
+.partners-content {
+  background-image: url("../assets/images/main-grid.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: -85px 50px;
 }
-.partners-content{
-background-position: 100% -20px;
+.partners-content {
+  background-position: 100% -20px;
 }
 
 .vision-content {
@@ -421,7 +422,6 @@ background-position: 100% -20px;
   flex-direction: column;
   gap: 30px;
   align-items: start;
-
 }
 
 .partners-wrapper {
@@ -440,17 +440,18 @@ background-position: 100% -20px;
 .help-customers-section {
   background: #00091f;
   position: relative;
+  overflow: hidden;
 }
 
 .help-customers-section p {
   color: #ffffffcc;
 }
 
-.ribbon-customer{
+.ribbon-customer {
   position: absolute;
-    z-index: 0;
-    bottom: 20px;
-    left: -55px;
+  z-index: 0;
+  bottom: 20px;
+  left: -55px;
 }
 
 .section-header {
@@ -673,7 +674,7 @@ background-position: 100% -20px;
   width: 100%;
   height: 40px;
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -947,15 +948,95 @@ footer > div {
   height: 500px;
 }
 
-.insights-card-description.section-description{
-  max-width:50%;
+.insights-card-description.section-description {
+  max-width: 50%;
 }
-
 
 div.ribbon-des {
   position: absolute;
-    z-index: 1;
-    top: 44%;
-    transform: translate(28%, -50%);
-    right: 60px;
+  z-index: 1;
+  top: 44%;
+  transform: translate(28%, -50%);
+  right: 60px;
+}
+
+.help-customers-list .splide__slide {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.insight-hub-nav .nav__arrow {
+  color: #34a2ff;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #dcdcdc;
+  padding: 12px;
+}
+
+.insight-hub-nav .dot {
+  width: 30px;
+  height: 5px;
+  border-radius: 6px;
+  margin: 0 var(--spacing-small);
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.insight-hub-nav .dot--active,
+.insight-hub-nav .dot:hover {
+  background: #34a2ff;
+  border: none;
+}
+
+.insight-hub.splide {
+  position: relative;
+  max-height: 700px;
+}
+
+.container.insight-hub-nav {
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 105px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container.insight-hub-nav .slider__nav {
+  position: absolute;
+  bottom: var(--spacing-large);
+  left: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+
+@media only screen and (max-width: 780px) {
+  .header{
+    display: none;
+  }
+  main .container,.help-customers-content,.marketplace-cards{
+    flex-direction: column;
+  }
+  .section-description,.insights-card-description.section-description{
+    max-width: 85%;
+  }
+  .help-customers-details{
+    height: 190px;
+  }
+
+  .footer__details{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__wrapper{
+    flex-direction: column;
+  }
+ 
 }
