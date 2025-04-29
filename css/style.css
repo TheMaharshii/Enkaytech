@@ -945,7 +945,7 @@ footer > div {
   display: flex;
   justify-content: center;
   align-items: start;
-  height: 500px;
+  height: fit-content;
 }
 
 .insights-card-description.section-description {
@@ -992,21 +992,21 @@ div.ribbon-des {
 
 .insight-hub.splide {
   position: relative;
-  max-height: 700px;
+  max-height: 100%;
 }
 
 .container.insight-hub-nav {
   padding: 0;
   position: absolute;
   z-index: 1;
-  bottom: 105px;
+  bottom: -75px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .container.insight-hub-nav .slider__nav {
   position: absolute;
-  bottom: var(--spacing-large);
+  bottom: 0;
   left: 50%;
   z-index: 5;
   display: flex;
