@@ -1014,29 +1014,68 @@ div.ribbon-des {
   transform: translateX(-50%);
 }
 
-
 @media only screen and (max-width: 780px) {
-  .header{
+  html{
+    font-size: 14px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .header {
     display: none;
   }
-  main .container,.help-customers-content,.marketplace-cards{
+
+  .logos-slide img{
+    max-width: 120px;
+    height: auto;
+    margin: 0 20px;
+  }
+  main .container,
+  .help-customers-content,
+  .marketplace-cards,
+  .footer__contact {
     flex-direction: column;
   }
-  .section-description,.insights-card-description.section-description{
+  .section-description,
+  .insights-card-description.section-description {
     max-width: 85%;
   }
-  .help-customers-details{
-    height: 190px;
+  .help-customers-details {
+    height: 290px;
   }
 
-  .footer__details{
+  .footer__details {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .footer__wrapper{
+  .footer__wrapper {
     flex-direction: column;
   }
- 
+
+  main .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .owl-buttons {
+    bottom: -25px;
+  }
+
+  .contact-us-form {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer__contac {
+    margin-top: 15px;
+    align-items: center;
+  }
 }
