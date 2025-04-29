@@ -558,6 +558,7 @@ main .container {
   min-height: 530px;
   position: relative;
   overflow: hidden;
+  background: white !important;
 }
 
 .marketplace-card.card-two {
@@ -1027,6 +1028,10 @@ section.about-us-section {
 
 section.insights-card-section {
   background-image: url("../assets/insight-hub-background.svg");
+}
+
+section.marketplace-section{
+  background-image: url("../assets/marketplace-grid.svg");
 }
 
 .contact-us-header {
