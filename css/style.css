@@ -406,15 +406,22 @@ main .container {
   letter-spacing: 0.03rem;
 }
 
+.vision-content,.partners-content{
+  background-image: url('../assets/images/main-grid.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -85px 50px;
+}
+.partners-content{
+background-position: 100% -20px;
+}
+
 .vision-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: start;
-  background-image: url('../assets/images/main-grid.svg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: -85px 50px;
+
 }
 
 .partners-wrapper {
