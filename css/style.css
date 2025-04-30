@@ -1114,8 +1114,7 @@ section.marketplace-section{
   }
 }
 
-wistia-player{
-  min-width: 100%;
-
-  min-height: 100%;
+.video-player{
+  max-width: 100%;
+  border-radius: 10px;
 }

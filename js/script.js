@@ -76,9 +76,6 @@ const insightPrevButton = document.querySelector(".insight-hub-nav .nav__arrow--
 const insightNextButton = document.querySelector(".insight-hub-nav .nav__arrow--next");
 
 const insightDots = document.querySelectorAll(".insight-hub-nav .dot");
-console.log(insightDots);
-console.log(insightPrevButton);
-console.log(insightNextButton);
 
 if (insightPrevButton && insightNextButton) {
   insightPrevButton.addEventListener("click", () => {
@@ -132,16 +129,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-const hamburger = document.querySelector(".hamburger__button");
-const nav = document.querySelector(".nav__list");
-const closeButton = document.querySelector(".nav__link--close");
+const player = new Plyr('video', {captions: {active: true}});
 
-hamburger.addEventListener("click", () => {
-  nav.classList.add("active");
-});
-
-closeButton.addEventListener("click", () => {
-  nav.classList.remove("active");
-});
-
+// Expose player so it can be used from the console
+window.player = player;
 

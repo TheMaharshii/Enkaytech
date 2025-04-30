@@ -226,25 +226,50 @@
       <section class="vision-section">
         <div class="container vision-wrapper">
           <div class="vision-video">
-            <script src="https://fast.wistia.com/player.js" async></script>
-            <script
-              src="https://fast.wistia.com/embed/0ufidxok5r.js"
-              async
-              type="module"
-            ></script>
-            <style>
-              wistia-player[media-id="0ufidxok5r"]:not(:defined) {
-                background: center / contain no-repeat
-                  url("https://fast.wistia.com/embed/medias/0ufidxok5r/swatch");
-                display: block;
-                filter: blur(5px);
-                padding-top: 56.25%;
-              }
-            </style>
-            <wistia-player
-              media-id="0ufidxok5r"
-              aspect="1.7777777777777777"
-            ></wistia-player>
+            <video
+            class="video-player"
+              controls
+              crossorigin
+              playsinline
+              poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+            >
+              <source
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                type="video/mp4"
+                size="576"
+              />
+              <source
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                type="video/mp4"
+                size="720"
+              />
+              <source
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                type="video/mp4"
+                size="1080"
+              />
+
+              <!-- Caption files -->
+              <track
+                kind="captions"
+                label="English"
+                srclang="en"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                default
+              />
+              <track
+                kind="captions"
+                label="Français"
+                srclang="fr"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt"
+              />
+              <!-- Fallback for browsers that don't support the <video> element -->
+              <a
+                href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                download
+                >Download</a
+              >
+            </video>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
 
