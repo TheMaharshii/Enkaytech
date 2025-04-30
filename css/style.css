@@ -1118,3 +1118,8 @@ section.marketplace-section{
   max-width: 100%;
   border-radius: 10px;
 }
+
+
+.vision-video,.vision-content{
+  flex: 1;
+}
