@@ -549,8 +549,8 @@ main .container {
   background: radial-gradient(
     circle at 110% -120%,
     #b6e1ff 0%,
-    #ffffff00 55%,
-    #ffffff00 100%
+    #ffffff 55%,
+    #ffffff 100%
   );
   padding: 32px;
   border-radius: 16px;
@@ -558,15 +558,15 @@ main .container {
   min-height: 530px;
   position: relative;
   overflow: hidden;
-  background: white !important;
+  /* background: white !important; */
 }
 
 .marketplace-card.card-two {
   background: radial-gradient(
     circle at 115% 195%,
     #b6e1ff 0%,
-    #ffffff00 55%,
-    #ffffff00 100%
+    #ffffff 55%,
+    #ffffff 100%
   );
 }
 
